@@ -1,0 +1,7 @@
+studentid,semester,subject_code,subject_name,grade,credits
+3,1-2,R231101,Communicative English,S,3
+3,1-2,R231103,Chemistry,A,3
+3,1-2,R231105,Linear Algebra,A,4
+3,1-2,R231107,Programming,B,3
+3,1-2,R231101L,English Lab,S,1.5
+3,1-2,R231107L,Python Lab,S,1.5

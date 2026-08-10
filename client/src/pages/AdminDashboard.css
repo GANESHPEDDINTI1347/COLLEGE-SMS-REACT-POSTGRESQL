@@ -1,0 +1,205 @@
+/* ================================
+   ADMIN DASHBOARD
+================================ */
+
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.admin-title {
+  margin: 0 0 25px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* ================================
+   ANALYTICS CARDS
+================================ */
+
+.admin-analytics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-card {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: 0.25s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.admin-card h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #2563eb;
+}
+
+/* ================================
+   SEARCH SECTION
+================================ */
+
+.admin-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.admin-search input {
+  width: 280px;
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.admin-search input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.admin-btn {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.admin-search-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.admin-search-btn:hover {
+  background: #1d4ed8;
+}
+
+.admin-refresh-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.admin-refresh-btn:hover {
+  background: #4b5563;
+}
+
+.admin-delete-btn {
+  background: #dc2626;
+  color: white;
+  padding: 8px 14px;
+}
+
+.admin-delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* ================================
+   TABLE
+================================ */
+
+.admin-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.admin-table th {
+  padding: 14px;
+  text-align: left;
+  background: #1f2937;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.admin-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 14px;
+}
+
+.admin-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-no-students {
+  text-align: center !important;
+  padding: 25px !important;
+  color: #6b7280 !important;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .admin-analytics {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-dashboard {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-title {
+    font-size: 24px;
+  }
+
+  .admin-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-search input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .admin-btn {
+    width: 100%;
+  }
+}

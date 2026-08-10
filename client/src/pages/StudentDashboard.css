@@ -1,0 +1,351 @@
+/* =========================
+   MAIN BACKGROUND
+========================= */
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 25px;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* =========================
+   PROFILE BANNER
+========================= */
+
+.profile-banner {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+
+  border-radius: 24px;
+  padding: 35px;
+  color: white;
+
+  box-shadow:
+    0 15px 40px rgba(
+      15,
+      23,
+      42,
+      0.25
+    );
+}
+
+.profile-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.student-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.student-role {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   GLASS CARDS
+========================= */
+
+.glass-card {
+  background: white;
+  border-radius: 22px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow:
+    0 10px 25px rgba(
+      0,
+      0,
+      0,
+      0.06
+    );
+
+  transition: 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stat-card {
+  min-height: 180px;
+
+  background: white;
+
+  color: #0f172a;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow:
+    0 8px 20px rgba(
+      0,
+      0,
+      0,
+      0.05
+    );
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.stat-card h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* =========================
+   ATTENDANCE SECTION
+========================= */
+
+.attendance-ring {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      #10b981 var(--progress),
+      #e2e8f0 0
+    );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 25px auto;
+}
+
+.attendance-inner {
+  width: 135px;
+  height: 135px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  color: #0f172a;
+}
+
+.attendance-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.table {
+  color: #1e293b !important;
+}
+
+.table th {
+  background: #eff6ff;
+  color: #2563eb;
+  border: none;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* =========================
+   NOTIFICATIONS
+========================= */
+
+.notification-card{
+
+  background:white;
+
+  border-left:5px solid #2563eb;
+
+  border-radius:12px;
+
+  padding:16px;
+
+  box-shadow:
+    0 4px 12px rgba(
+      0,
+      0,
+      0,
+      0.05
+    );
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  border-radius: 12px !important;
+  font-weight: 600;
+}
+
+/* =========================
+   SUMMARY CARD
+========================= */
+
+.glass-card h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.glass-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .profile-banner {
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 15px;
+  }
+
+  .student-name {
+    font-size: 2rem;
+  }
+
+  .attendance-ring {
+    width: 150px;
+    height: 150px;
+  }
+
+  .attendance-inner {
+    width: 110px;
+    height: 110px;
+    font-size: 1.5rem;
+  }
+
+  .attendance-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.semester-title{
+  background:#0f172a;
+
+  color:white;
+
+  padding:14px 20px;
+
+  border-radius:12px;
+
+  font-size:1.2rem;
+
+  font-weight:700;
+
+  letter-spacing:0.5px;
+}
+
+.default-avatar{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background:#f1f5f9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#64748b;
+  border:4px solid white;
+  margin:auto;
+}
+
+.profile-image{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid white;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.table th{
+  background:#0f172a !important;
+  color:white !important;
+}
+
+.table td{
+  background:white;
+  color:#334155;
+}
+
+html,
+body,
+#root {
+  height: auto !important;
+  min-height: 100vh;
+  overflow-y: auto !important;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  display: block;
+  margin: 0 auto;
+}
+
+.default-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
